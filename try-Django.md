@@ -1,7 +1,33 @@
 #Create a Django Project
 > django-admin startproject ThuyTinhShop
 
-Cấu trúc thư mục: 
+Cấu trúc thư mục:
+```
+ThuyTinhShop
+  ThuyTinhShop
+    init.py
+    setting.py
+    urls.py
+    wsgi.py
+  db.splite.3
+  manage.py
 ```
 
-```
+trong đó:
+
+* setting.py: chứa các cài đặt của project
+* urls.py: chứa url của project
+* manage.py: utility for administative tasks
+
+to run server use command:
+
+> python manage.py runserver
+
+manage.py is in the top-level project directory
+
+check in the browser with url: /127.0.0.1:8000/
+
+Create our main app inside of our ThuyTinhShop project:
+> python manage.py startapp main_app
+
+our app has its own directory and generated files
